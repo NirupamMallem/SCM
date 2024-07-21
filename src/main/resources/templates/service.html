@@ -1,0 +1,32 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is services pages</h1>
+    <div  th:replace="~{base::parent(~{::#main-content})}" >
+        <section id="main-content">
+            <p>this is the service section dynamic content</p>
+            <h2>This is the checking purpose heading</h2>
+            <button>Click me now</button>
+        </section>
+    </div>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base::parent(~{::#content},~{::title})}">
+<head>
+    <title>Services Page</title>
+</head>
+<body>
+    <div id="content">
+        <h1>Wel come to services page</h1>
+        <p>Services offered by SCM</p>
+    </div>
+</body>
+</html>
+
